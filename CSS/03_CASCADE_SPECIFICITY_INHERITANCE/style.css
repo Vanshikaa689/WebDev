@@ -1,0 +1,34 @@
+/* specificity means importance*/
+/* #html ki specifity zyaada hai .html se and .html ki specificity zyaada hai li se */
+/* if specificity is same then cascade rule applies */
+/* specificity can be added up */
+#html#html#html#html#html{
+  color: red;
+}
+li#html.html{
+  background-color: darkmagenta;
+}
+#html{
+  background-color: deeppink;
+}
+.html{
+  background-color:rgb(207, 121, 64);
+}
+.html{
+  background-color: blueviolet;
+}
+/* jaise jaise neeche jaaynege importance badhti jaaygi */
+li {
+  background-color: green;
+  color:blueviolet
+}
+li{
+  background-color: orange;
+  color:cornflowerblue
+}
+#html{
+  color:red
+}
+.html.html.html.html.html.html.html.html.html.html{
+  color: blue
+}

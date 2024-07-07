@@ -1,0 +1,12 @@
+p{
+    color: red;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: underline;
+    font-family:serif;
+    text-align: center;
+    font-style:italic
+}
+a{
+    text-decoration: None;
+}

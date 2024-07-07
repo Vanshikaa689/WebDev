@@ -1,0 +1,64 @@
+body{
+    margin:0;
+}
+.parent{
+    padding: 10px;
+    border: 4px solid indianred;
+    height: 50vh;
+    display:flex;
+
+    /* justify-content: center; */
+    /* to leave equal spacing on both sides of flexbox so that flex box is centered */
+
+    /* align-items: stretch; */
+    /* stretch to full height of flex box */
+
+    /* justify-content: between; */
+    /* gives space between */
+
+    justify-content: space-evenly;
+    /* distributes space evenly */
+
+    /* justify-content: space-around; */
+    /* gives space in between items and also around them */
+
+    align-items: center;
+    /* only maintains that much height as height of content */
+    /* if display flex wasnt there then span wouldnt be affected by the height and width given since span is an inline element  */
+    /* jo bhi inline elments hain iske direct children mein saare box ban jaate hain jaise hi hum flex lagate hain(flex items ban jaate hain) */
+
+    /* flex-direction: row; - default*/
+    flex-direction: row-reverse;
+    /* flex-direction: column; */
+}
+*{
+    box-sizing: border-box;
+}
+.parent span{
+    /* to target direct children of parent then  */
+    border: 4px solid cadetblue;
+    width: 200px;
+    /* height: 300px; */
+
+    /* flex-shrink: 0; */
+    /* span element ki width shrink nai hogi */
+
+    /* flex-grow: 1; */
+    /* jitna spacecover kar skata hai utna karega by flex-grow:1 */
+    /* empty space is equally distributed */
+}
+.parent p{
+    margin: 0;
+    border: 4px solid darkkhaki;
+    width: 300px;
+    /* width: max-content; */
+    /* width: min-content; */
+}
+.parent a{
+    border: 4px solid yellowgreen;
+    width: 300px;
+}
+/* whenever we reduce the size of the page or the box each item in the flex box shrinks by the same percentage */
+/* display flex
+align-items: centre
+justify-content: center */

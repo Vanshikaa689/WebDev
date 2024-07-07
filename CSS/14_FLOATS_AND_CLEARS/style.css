@@ -1,0 +1,29 @@
+.container{
+    background-color: cadetblue;
+    display: flow-root;
+    /* so that image doesnt come out of parent when it's width is increased */
+}
+
+img{
+    width:400px;
+    float:left;
+    margin-right: 0.75em;
+    margin-left: 0.75rem;
+    /* opacity: 0.5; */
+    /* position:absolute; */
+    /* float is like position absolute but the text doesnt go below the element jisko float diya hai */
+}
+.first-paragraph{
+    /* background-color: burlywood; */
+}
+/* img changed to block from inline when float is applied */
+a{
+    
+        width:200px;
+        /* float:left; */
+        background-color: cornflowerblue;
+        /* margin-right: 0.75em; */
+        /* anchor tag is inline element but on applying float it 
+        becomes block when it becomes block then it's width also 
+        becomes changeable */
+}

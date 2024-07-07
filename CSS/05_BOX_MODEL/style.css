@@ -1,0 +1,50 @@
+/* by default block level elements have same height ascontent and width is full page width */
+*{
+    box-sizing: border-box;
+}
+
+.parent2{
+    width: 800px;
+    /* parent ki width dena zaroori nai hai child will autmatically inherit width  */
+}
+/* percent mein child ki height tab kaam karegi if parent has some height given height hamesha same rahegi if you dont give parent some height */
+
+
+.one{
+    background-color: aquamarine;
+    width: 400px;
+    height: 300px;
+    overflow: visible;
+    padding: 10px;
+    border: 10px solid darkgoldenrod;
+    box-sizing: border-box;
+    margin: 40px;
+    border-radius: 40px;
+    /* jitna width diya hota hai usi mein se padding and margin hata deta hai  */
+    /* use max width and min height instead */ 
+    /* margin element ke bahar hota hai */
+}
+.two{
+    background-color: rgb(43, 116, 226);
+    word-break: break-al l;
+    width: 500px;
+    height: 500px;
+    border: 10px solid burlywood;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 50%;
+    outline: 15px solid cadetblue;
+    margin: 10px;
+}
+h1{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+/* circle ke liye square ka border radius 50% and ellipse ke liye rectangle ka border radius 50% */
+img{
+    width: 80%;
+    margin-bottom: -450px;
+    margin-left: 43px;
+}

@@ -1,0 +1,15 @@
+#html{
+    background-color: aquamarine;
+}
+/* body ke andar jo bhi hai unka bhi color green ho gaya because they inherit from body which is the parent */
+body{
+    color:green;
+    font-size: small;
+    font-weight: 400;
+    font-style: italic;
+    font-family: cursive;
+}
+/* submit doesnt inherit these properties from body even though it's inside the body */
+button{
+    font-family: inherit;
+}

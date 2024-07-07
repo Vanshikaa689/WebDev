@@ -1,0 +1,27 @@
+body{
+    font-family: sans-serif;
+    /* overflow:hidden; noy usually recommended */
+}
+.box{
+    font-size: 4rem;
+    border: 4px solid;
+    /* width: 170px; - never give width*/
+}
+/* overflow - parent ke andar ka content parent ke width se bada ho jaata hai  */
+@media(width<500px){
+    .box{
+        font-size:2em;
+    }
+}
+
+/* In CSS, the term "awesome" is often associated with the overflow: auto property due to its versatile and adaptive behavior. Here’s why overflow: auto is considered awesome:
+
+Automatic Handling: It automatically adds scrollbars when needed. If the content fits within the container, no scrollbars are shown. If the content overflows, scrollbars appear. This behavior is very convenient and avoids the need to manually adjust the overflow behavior.
+
+User-Friendly: It enhances the user experience by providing scrollbars only when necessary. Users don’t see unnecessary scrollbars, which keeps the interface clean and easy to use.
+
+Flexibility: It works well with both horizontal and vertical overflows. Regardless of whether the content overflows in the x or y direction, overflow: auto will handle it appropriately.
+
+Adaptability: It is useful in responsive design. As the size of the container changes (for example, when viewed on different devices or window sizes), overflow: auto adapts by providing scrollbars only when the content actually overflows the container.
+
+Common Use Case: It is widely used in web design for creating scrollable content areas without affecting the layout when there is no overflow. This makes it a go-to solution for many developers. */

@@ -1,0 +1,116 @@
+div{
+    position: relative;
+    /* position change with respect to it's current pos and values proided in top, bottom, left, right */
+    background-color:coral;
+    /* top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+   this is a shorter version for all 4 inset: 5px; */
+}
+.css-element{
+    background-color: deeppink;
+    position: absolute;
+    top: 50px;
+    /* bottom: 5px; */
+    left: 5px;
+    right: 5px;
+    /* changes with respect to top, bottom, left, right of viewport */
+}
+ul{
+    /* position of css-element is absolute */
+    /*body is grandparent of css-element so it gets attached to oit if the position is anything other than static and parent has static  */
+    /* ul is parent of css-element and ul has position other than static sl now css element is attached to ul  */
+    position: relative;
+    background-color: forestgreen;
+    height: 500px;
+    overflow-y: scroll  ;
+    margin-top: 200px ;
+    /* now css-element is attached to it's parent ul before it was attached to viewport */
+    /* since parent of css-element is ul and ul is relative psoition so now all the positions of css will be calculated with respect to the parent */
+} 
+.js-element{
+    /* js apne parent se bahar aa chuka hai */
+    position: fixed;
+    background-color: lime;
+    top: 50px;
+    /*  bottom: 5px; */
+    left: 5px;
+    right: 5px;
+    /* exaclty like abolute except doesnt depend on the position of its ancestors, always attached to viewport */
+}
+.html-element{
+    position: sticky;
+    background-color: darkorchid;
+    /* doesnt go outside parent boundary */
+    /* parent ki height honi chahiye and scroll bar hina chahaiye */
+
+}
+header{
+    position: sticky;
+    background-color: blueviolet;
+    top: 0;
+}
+/* In CSS, the position property specifies the type of positioning method used for an element. The different values for the position property are static, relative, absolute, fixed, and sticky. Here's an overview of each:
+
+Static
+position: static;
+
+This is the default position for all elements.
+The element is positioned according to the normal document flow.
+top, right, bottom, and left properties have no effect.
+css
+Copy code
+.element {
+  position: static;
+}
+Relative
+position: relative;
+
+The element is positioned relative to its normal position.
+The top, right, bottom, and left properties will move the element from its normal position.
+Other elements will not be affected and will remain in their original positions.
+css
+Copy code
+.element {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+Absolute
+position: absolute;
+
+The element is positioned relative to the nearest positioned ancestor (an ancestor with a position other than static).
+If there is no such ancestor, the element is positioned relative to the initial containing block (typically the viewport).
+The element is removed from the normal document flow, and other elements will behave as if it does not exist.
+css
+Copy code
+.element {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+Fixed
+position: fixed;
+
+The element is positioned relative to the viewport and does not move when the page is scrolled.
+The element is removed from the normal document flow, similar to absolute.
+css
+Copy code
+.element {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+Sticky
+position: sticky;
+
+The element is treated as relative until its containing block crosses a specified threshold, at which point it is treated as fixed.
+The top, right, bottom, and left properties are used to set the threshold.
+Useful for elements that should stick to the viewport (like a sticky header) but only within their containing block.
+css
+Copy code
+.element {
+  position: sticky;
+  top: 0;
+} */

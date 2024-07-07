@@ -1,0 +1,41 @@
+/* specificity means importance*/
+/* #html ki specifity zyaada hai .html se and .html ki specificity zyaada hai li se */
+/* if specificity is same then cascade rule applies */
+/* specificity can be added up */
+/* inline style has highest specificity but if you write important then that color will be chosen*/
+/* important can be overrided by important only - if we have two impirtants then cascade rule is followed  */
+li.html{
+  background-color: aqua !important;
+  color:blueviolet
+}
+li {
+  background-color: green !important;
+  color:blueviolet
+}
+li {
+  background-color: rgb(128, 0, 98) !important;
+  color:blueviolet
+} 
+#html#html#html#html#html{
+  color: red;
+}
+li#html.html{
+  background-color: darkmagenta;
+}
+#html{
+  background-color: deeppink;
+}
+.html{
+  background-color: chocolate;
+}
+/* jaise jaise neeche jaaynege value badhti jaaygi */
+li{
+  background-color: orange;
+  color:cornflowerblue
+}
+#html{
+  color:red
+}
+.html.html.html.html.html.html.html.html.html.html{
+  color: blue
+}

@@ -1,0 +1,72 @@
+:root{
+    --primary-brand-color:#fa6400;
+    --secondary-brand-color:#405cf5;
+    --rounded: 24px;
+}
+
+body {
+    font-family: sans-serif;
+    --primary-brand-color:#fa6400;
+    --secondary-brand-color:#405cf5;
+    --rounded: 24px;
+  }
+  
+  * {
+      box-sizing: border-box;
+  }
+  .first-container{
+    --primary-brand-color:#fa6400;
+    --secondary-brand-color:#405cf5;
+    --rounded: 4px;
+  }
+  /* only first container will get color  - so we should always
+   define this in root - but you can overwrite it in the container*/
+  
+  h2 {
+      color: var(--secondary-brand-color);
+  }
+  
+  a {
+    /* primary and seondary colors can also be overidded here  */
+    /* can provide a fallback color too with a comma  */
+    color: var(--primary-brand-color);
+    text-decoration: none;
+    border: 2px solid var(--primary-brand-color);
+    padding: 0.5em 1em;
+    font-size: 14px;
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+    border-radius: var(--rounded);
+  }
+  
+  strong {
+    color: var(--primary-brand-color);
+  }
+  
+  span {
+      color: var(--primary-brand-color);
+  }
+  
+  code {
+      color: var(--secondary-brand-color);
+  }
+  /* code tag makes font family monospace and makes font size smaller */
+  
+  button {
+    border: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: var(--rounded);
+    font-size: 14px;
+    font-family: inherit;
+    height: 32px;
+  }
+  
+  .previous-button {
+    background-color: var(--primary-brand-color);
+  }
+  
+  .next-button {
+    background-color: var(--secondary-brand-color);
+  }

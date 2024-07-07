@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+section{
+    width: 50%;
+    background-color:blueviolet;
+    box-sizing: border-box;
+    padding: 10%;
+    font-size: 10px;
+    /* by default section ya div ka font size 16px hota hai */
+}
+.box{
+    background-color: chartreuse; 
+    max-width: 50%;
+    padding: 10%;
+    /* padding is calculated from width */
+    margin: 10%;
+    font-size: 10%;
+    /* agar parent ki font size nai di hai and child ki font size percent mein kare toh 6px se neeche nai jaata font size */
+    /* font-size also calculated from parent font size  */
+    /* border: 10% solid blanchedalmond; dosnt work with border*/
+}
+/* vw, vh -> study */
+/* 1. if we want to set font-size in em unit,it will consider his parent fontsize as 1em, according to that it will calculate the font size.
+2. but, if we want to set padding,width etc in em unit, it will consider his own font-size as 1em, and calculate according to that.
+3. There is another unit called rem, it will consider html/root as 1rem, according to that it will calculate. */

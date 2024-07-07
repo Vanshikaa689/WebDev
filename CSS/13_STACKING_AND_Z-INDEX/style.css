@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: -100px;
+}
+.first-container{
+    background-color: hotpink;
+    box-shadow: 0 5px 16px;
+    padding: 1rem;
+    position: relative;
+    z-index: 5;
+}
+.second-container{
+    background-color: cadetblue;
+    box-shadow: 0 5px 16px;
+    padding: 1rem;
+    position: relative;
+    z-index:2;
+}
+.red-box {
+    background-color: red;
+    position:relative;
+    z-index: 10;
+    /* z index by default 0 hai */
+    /* position dene ke baad hi zindex apply kar sakte hain */
+    /*  */
+}
+
+.green-box {
+    background-color: green;
+    position: relative;
+    margin-left: 2rem;
+}
+
+.blue-box {
+    background-color: blue;
+    position: relative;
+    margin-left: 3rem;
+}
+second-container .red-box{
+    z-index:999999;
+}
+first-container .blue-box{
+    z-index: 5;
+}
+/* when we give relative position and z-index to 2 containers then the
+ container which has lesser zindex is below and its contents always
+  lie below the first conatiners content no matter what zindexwe give 
+  to the contents separately*/

@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    min-height: 60vh;
+    background-color: lightblue;
+    display: grid;
+    grid-auto-flow: row;
+    /* divided by default into rows */
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+
+    /* grid-template-columns: repeat(4, minmax(80px, 140px))*/;
+     /* tells minimum and maximum height that it can take - can be used with auto-fill also*/
+
+    /* shortcut - grid-template:repeat(4, 100px)/repeat(4, 100px); */
+    /* default value is none */
+
+    /* grid-template-columns: repeat(auto-fill, 100px); */
+    /* keeps creating space for new ite as browser size is increased */
+
+    /* grid-auto-flow: row dense; */
+    /* dense - doesnt shift the grid items when using grid-column-start */
+
+    /* grid-auto-columns: 100px; */
+    /* new columns created will have 100px width automatically */
+
+    /* grid-auto-rows: 120px; */
+     /* new rows created will have 120px height automatically */
+
+    align-items: center;
+    /* justify-items: start, normal, stretch;  */
+    justify-content: center;
+     
+  }
+  
+  .box {
+    min-height: 90px; 
+    color: white;
+    font-size: 4rem;
+    padding: 1rem;
+  }
+  
+  .box-1 {
+    background-color: green;
+    grid-column-start:4;
+  }
+  
+  .box-2 {
+    background-color: blueviolet;
+  }
+  
+  .box-3 {
+    background-color: blue;
+  }
+  
+  .box-4 {
+    background-color: brown;
+    /* align-self: stretch;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-left: auto;
+    /* marrgin-left,right,top,bottom,inline:auto; */
+
+  }
+  
+  .box-5 {
+    background-color: coral;
+   
+  }
+  
+  .box-6 {
+    background-color: darkblue;
+  }
+  
+  .box-7 {
+    background-color: darkred;
+  }
+  
+  .box-8 {
+    background-color: darkslategray;
+  }
+  
+  .box-9 {
+    background-color: gray;
+  }
+  
+  .box-10 {
+    background-color: navy;
+  }

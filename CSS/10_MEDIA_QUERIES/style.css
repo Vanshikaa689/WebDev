@@ -1,0 +1,30 @@
+.square{
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+    border: 25px solid coral;
+    print-color-adjust: exact; 
+    /* - to print background also in firefox */
+    /* webkit-print-color-adjust: exact; - to print background also in chrome*/
+}
+@media (500px<=width<= 700px){
+    h1{
+        font-size: 48px;
+    }
+    .square{
+        border: 25px solid deeppink;
+        background-color: greenyellow;
+    }
+}
+/* features(width, height, orientation) can be combined using 'and' and 'or' and'not' and 'only' */
+/* @media (max-width: 700px){
+    h1{
+        font-size: 48px;
+    }
+    .square{
+        border: 25px solid deeppink;
+        background-color: greenyellow;
+    }
+} */
+/* by default @ media value is all - it looks same in all places */
+/* media types -> screen- cascading applies, all - same everywhere, print - different in print*/

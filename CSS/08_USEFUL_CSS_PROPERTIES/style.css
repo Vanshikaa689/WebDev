@@ -1,0 +1,50 @@
+main{
+    /* we add a main to attach the box to the main block */
+    position:relative;
+    background-color: coral;
+    height: 400px;
+    width: 600px;
+}
+.box{
+    background-color: rgb(43, 226, 205);
+    background-image: url('https://images.unsplash.com/photo-1717463726221-d2b5621135c8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0px; 
+    background-position-y: -90px;
+    height: 200px;
+    width: 200px;
+    /* transform: scale(1.5); - resizes the element
+    transform-origin: 0 0; */
+    /* opacity: 0.5; */
+    /* rgba - a in this means alpha channel - only background becomes transparent using this*/
+    /* using opacity makes the text also transparent */
+    /* transform: rotate(45deg); */
+ 
+    /* transform: translateY(100px); */
+    /* can be given in percentage too */
+    /* percentage mein de toh ina move karega jitni uski height/width hai hai  */
+    /* this is like margin except that it doesnt move the content it goes over it or under */
+    /* margin-top: 300px; */
+
+    /* for smooth transition */
+    transition: transform 200ms;
+
+    position: absolute;
+    left: 50%;
+    top:50%;
+
+    /* transform:translate(-50%, -50%); */
+
+    box-shadow:10px 10px 4px rgb(0,0,0,0.5);
+    border-radius:10%;
+    /* text-shadow: 6px 6px 5px darkolivegreen */
+    /* first - disp from x axis, second - disp from y axis, third - blur radius fourth - spread radius*/
+}
+.box:hover{
+    /* for rotation and scaleing on hovering */
+    transform:rotate(45deg) scale(1.5);
+}
+h1{
+    color:darkred
+}

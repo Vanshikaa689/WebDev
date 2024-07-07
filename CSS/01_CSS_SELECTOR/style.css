@@ -1,0 +1,52 @@
+/* class selectors*/
+.html {
+  color: #e54d26;
+}
+li {
+  font-weight: 700;
+  font-size: 32px;
+}
+/* id selectors*/
+/* #html
+{
+    font-size: 32px;
+}
+#css
+{
+    font-size: 32px;
+}
+#js
+{
+    font-size: 32px;
+}
+#react
+{
+    font-size: 32px;
+}
+#tailwind
+{
+    font-size: 32px;
+} */
+
+/* attribute selector - selects element jispe woh attribute diya ho */
+[class] {
+  background-color: greenyellow;
+}
+[vanshika] {
+  background-color: aquamarine;
+}
+/* combinator selectors */
+/* ul p{
+    background-color: green
+} */
+/* descendent selector*/
+.web p {
+  background-color: brown;
+}
+p {
+  background-color: pink;
+}
+/* pseudoselector- hover selector */
+h1:hover{
+    color:blue;
+}

@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+P{
+    background-color: greenyellow;
+    width: 300px;
+    height: 100px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 10px solid crimson;
+    margin: 25px;
+}
+.html{
+    background-color: lightblue;
+    width:300px;
+    padding: 20px;
+    /* doesnt push the elements near rather gets on top of them */
+}
+/* width and height dont apply on inline elements */
