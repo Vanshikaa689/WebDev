@@ -1,0 +1,13 @@
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 1rem;
+    background-color:chartreuse
+}
+.dark{
+    background-color: black;
+}
+.light{
+    background-color: white;
+}
