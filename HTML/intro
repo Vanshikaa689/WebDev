@@ -1,0 +1,22 @@
+Common HTML Elements
+<!DOCTYPE html>: Defines the document type and HTML version
+<html>: Root element of an HTML page
+<head>: Contains meta-information about the HTML document
+<title>: Sets the title of the HTML document
+<body>: Contains the content of the HTML document
+<h1> to <h6>: Header tags, <h1> is the highest level and <h6> is the lowest
+<p>: Paragraph tag
+<a>: Anchor tag for links
+<img>: Image tag
+<ul>: Unordered list
+<ol>: Ordered list
+<li>: List item
+HTML Attributes
+HTML attributes provide additional information about HTML elements. They are always included in the opening tag and usually come in name/value pairs like name="value".
+
+Common Attributes
+id: Specifies a unique id for an element
+class: Specifies one or more class names for an element
+src: Specifies the source of an image
+href: Specifies the URL for a link
+alt: Provides alternative text for an image
