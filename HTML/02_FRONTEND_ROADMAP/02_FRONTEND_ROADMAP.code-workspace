@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../frontend-roadmap-main/assets/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "02_FRONTEND_ROADMAP"
+	}
+}
