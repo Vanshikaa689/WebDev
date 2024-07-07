@@ -1,0 +1,40 @@
+body{
+    margin:0;
+    font-family: sans-serif
+}
+
+.hashtag-header{
+    /* height: 300px; remove height to position text in the cevntre*/
+    padding: 4rem;
+    background-color: #065fd4;
+    color: white;
+    background-image: url('/images/background.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: -200px;
+}
+.hashtag-header h1{
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 4rem
+}
+.hashtag-header span{
+    font-size: 2rem;
+}
+.hashtag-header img{
+    /* never give height and width both to an image always let one be decided by the browser */
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    border: 5px solid white;
+    vertical-align: middle;
+}
+img{
+    /* adjacent sibling selector - first wale ko chod kar nbaaki sab select kar lega */
+    margin-left: -1rem;
+}
+.images-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
