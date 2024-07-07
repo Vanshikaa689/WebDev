@@ -1,0 +1,43 @@
+CSS Selectors
+Selectors are used to target HTML elements that you want to style. There are several types of selectors in CSS.
+
+Common Selectors
+*: Universal selector
+element: Type selector (e.g., p, h1)
+#id: ID selector
+.class: Class selector
+element element: Descendant selector
+element > element: Child selector
+element + element: Adjacent sibling selector
+element ~ element: General sibling selector
+CSS Properties
+CSS properties are used to define the styles that will be applied to the selected elements. There are many properties available in CSS.
+
+Common Properties
+color: Sets the color of text
+background-color: Sets the background color of an element
+font-family: Sets the font of text
+font-size: Sets the size of text
+margin: Sets the space outside an element
+padding: Sets the space inside an element
+border: Sets the border around an element
+width: Sets the width of an element
+height: Sets the height of an element
+CSS Box Model
+The CSS box model describes the rectangular boxes that are generated for elements in the document tree and how their dimensions and margins, borders, and padding are calculated.
+
+Box Model Components
+content: The content of the box, where text and images appear
+padding: Clears an area around the content
+border: A border that goes around the padding and content
+margin: Clears an area outside the border
+
+CSS Layout
+CSS provides several layout techniques to control the position and size of elements.
+
+Common Layout Techniques
+display: Controls the display behavior of an element (block, inline, flex, grid, etc.)
+position: Controls the positioning of an element (static, relative, absolute, fixed, sticky)
+float: Floats an element to the left or right
+flexbox: A layout model for arranging elements in a flexible way
+grid: A layout model for creating complex grid-based layouts
